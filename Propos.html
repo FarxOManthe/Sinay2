@@ -1,0 +1,195 @@
+<html lang="">
+    <head>
+        <!--  -->
+        
+
+
+<style itemscope itemtype="https://schema.org/WebSite" itemref="schema_name schema_description schema_image"></style>
+
+
+  <title>Mon Histoire </title>
+  <meta id="schema_name" itemprop="name" content="Mon Histoire - Trébuche">
+
+
+<meta name="description" content="Directrice Artistique, designer et illustratrice, Loire et Haute-Loire">
+<meta id="schema_description" itemprop="description" content="Directrice Artistique, designer et illustratrice, Loire et Haute-Loire">
+
+
+  <link rel="canonical" href="https://trebuche.fr/mon-histoire" />
+
+<meta name="twitter:card" content="">
+
+<meta name="twitter:title" content="Trébuche">
+
+<meta name="twitter:description" content="Directrice Artistique, designer et illustratrice, Loire et Haute-Loire">
+
+
+<meta name="twitter:site" content="">
+
+<meta name="twitter:creator" content="">
+        
+
+<meta name="robots" content="" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <!-- chargement des ressources -->
+        <script src="https://trebuche.fr/assets/js/jquery.js"></script>        <script src="https://trebuche.fr/assets/js/images.js"></script>        <script src="https://trebuche.fr/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>                          <link href="https://trebuche.fr/assets/css/main.css" rel="stylesheet">                
+        <link href="https://trebuche.fr/assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet">        <script src="https://js.stripe.com/v3"></script>
+
+        
+                  <!-- lancement des scripts -->
+          <script>
+              (function($){
+                  $(window).on("load",function(){
+                      $(".scroll").mCustomScrollbar({
+                          theme:"minimal-dark"
+                      });
+                  });
+              })(jQuery);
+          </script>
+        
+    </head>
+
+    <body class="grid">
+    
+    <section class="simple-grid headerSimple">
+        <div class="simple-grid__cell simple-grid__cell--1/4">
+            <h1>A PROPOS</h1>
+        </div>
+        <div class="simple-grid__cell simple-grid__cell--3/4">
+            <h1></h1>
+        </div>
+    </section>
+
+    <main class="simple-grid grid-image">
+        <div class="simple-grid__cell simple-grid__cell--1/8"></div>
+        <div class="simple-grid__cell simple-grid__cell--1/4 image-article">
+                                            <div class="item ">
+        <img id="1" src="https://cdn.discordapp.com/attachments/1180593741346652260/1305177205029994627/image.png?ex=6732147e&is=6730c2fe&hm=c1320c2e46efc3044cf04f29acb37eeb2b200a1e28aa7f80902c9b74257851a7&" alt=""
+            data_index="1" data_maxIndex="3" onclick="openModal(this.src, this.alt, this.getAttribute('data_index'), this.getAttribute('data_maxIndex') )">
+        <p></p>
+    </div>
+
+        
+    
+<!-- MODAL ZOOM -->
+
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div id="swipeArea" class="img-modal">
+        <button class="btn prev-img" onclick="previousModal()"></button>
+        <img src="" alt="Image en grand" index_courant="" index_max="" class="modal-content">
+        <button class="btn next-img" onclick="nextModal()"></button>
+
+    </div>
+    <p class="modal-title"></p>
+</div>
+
+<script>
+
+    function openModal(src, title, index = null, indexMax = null) {
+        document.querySelector('.modal-content').src = src;
+        document.querySelector('.modal-content').setAttribute('index_courant', index);
+        document.querySelector('.modal-content').setAttribute('index_max', indexMax);
+        document.querySelector('.modal-title').innerHTML = title;
+        document.getElementById('myModal').style.display = 'flex';
+        if (index == null && indexMax == null) {
+            document.querySelector('.prev-img').style.display = 'none';
+            document.querySelector('.next-img').style.display = 'none';
+        }
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+    }
+
+    function nextModal() {
+        var index = parseInt(document.querySelector('.modal-content').getAttribute('index_courant'));
+        var indexMax = parseInt(document.querySelector('.modal-content').getAttribute('index_max'));
+
+        if (index < indexMax) {
+            index++;
+        } else {
+            index = 1;
+        };
+        getContentOnIndex(index);
+    }
+
+    function previousModal() {
+        var index = parseInt(document.querySelector('.modal-content').getAttribute('index_courant'));
+        var indexMax = parseInt(document.querySelector('.modal-content').getAttribute('index_max'));
+
+        if (index < 2) {
+            index = indexMax;
+        } else {
+            index--;
+        };
+        getContentOnIndex(index);
+    }
+
+    function getContentOnIndex(index) {
+        if (Number.isInteger(index) && index !== null) {
+            var newImg = document.getElementById(index);
+
+            document.querySelector('.modal-content').src = newImg.src;
+            document.querySelector('.modal-content').setAttribute('index_courant', newImg.getAttribute('data_index'));
+            document.querySelector('.modal-content').setAttribute('index_max', newImg.getAttribute('data_maxIndex'));
+            document.querySelector('.modal-title').innerHTML = newImg.alt;
+
+        }
+    }
+</script>
+
+
+
+                    </div>
+        <div class="simple-grid__cell simple-grid__cell--1/2">
+            <p><span class="tresbig"> Qui je suis, et comment je travaille: </span><br>
+                <br><br><br>
+                Qui suis-je ?
+                Je m'appelle Sinay Jean-Voldemart, originaire des Hautes-Pyrénées, et plus précisément de la ville de Tarbes,
+                <br>
+                 ce coin de France où montagnes et paysages époustouflants semblent dessiner eux-mêmes des toiles. 
+                 <br>
+                 Depuis mon enfance, une passion profonde et vibrante pour le dessin et l'animation anime chacun de mes jours. Très tôt, crayons et pinceaux ont été mes fidèles compagnons, me permettant d'explorer des univers imaginaires et de donner vie aux images dans mon esprit.
+                 <br><br><br>
+                Aujourd'hui, je poursuis cette passion en classe de BTS en dessin, une formation artistique qui m’offre l’occasion d’aiguiser mon talent et de développer des techniques variées.
+                <br>
+                 Mais mon parcours n'a pas toujours été orienté vers le monde de l'art. Au lycée, j'avais pris une autre voie : celle de la programmation informatique. 
+                 <br><br>
+                 C’était un univers fascinant où logique et créativité se rencontrent, et je dois avouer que cette expérience m’a beaucoup appris. Pourtant, l’appel de l’art et de la création graphique a toujours été plus fort, guidant mes choix et mes rêves. C'est ainsi que, décidé à suivre mon cœur, j'ai choisi de quitter les codes et les algorithmes pour me consacrer pleinement à ma passion pour le dessin et l’animation.
+                
+                Depuis mon plus jeune âge, chaque dessin, chaque esquisse me rapproche un peu plus de cet univers.
+                <br><br>
+                 Les moments que je passe à crayonner, à peindre, et à animer des personnages sont pour moi bien plus que des instants de travail : ce sont des instants de vie, d’évasion et de création pure. Mes créations sont pour moi un moyen d’expression, un langage silencieux qui me permet de communiquer des émotions, de raconter des histoires, et d’inviter les autres à entrer dans un monde où tout devient possible.
+<br><br>
+<span class="bgcolor"> Si vous désirez travaillez avec moi, ce seras avec plaisir que je vous inviterai a me contacter par mail.  </span></p>
+
+        </div>
+        <div class="simple-grid__cell simple-grid__cell--1/8"></div>
+    </main>
+    <script src="https://trebuche.fr/assets/js/gallerieImage.js"></script>    <script src="https://trebuche.fr/assets/js/plugins.js"></script><script src="https://trebuche.fr/assets/js/jquery.js"></script><script src="https://trebuche.fr/assets/js/script.js"></script>
+<a id="sveg" class="btn" href="https://farxomanthe.github.io/Sinay.github.io/"><img src="https://cdn.discordapp.com/attachments/1272547122666930198/1305170858481946654/image.png?ex=67320e95&is=6730bd15&hm=7f627ee0c17d9404817db401a524cfc4e7cca253397597a4a45d6389e401bb50&" alt="back home"></a>
+<script>
+        // Sélectionner le bouton
+        var myButton = document.getElementById('sveg');
+
+        // Fonction pour ajouter ou retirer la classe en fonction de la position de défilement
+        function toggleClassOnScroll() {
+            if (window.scrollY === 0) {
+                myButton.classList.remove('button-fixed');
+            } else {
+                myButton.classList.add('button-fixed');
+            }
+        }
+
+        // Ajouter un gestionnaire d'événement de défilement
+        window.addEventListener('scroll', toggleClassOnScroll);
+
+        // Appeler la fonction une fois au chargement de la page pour gérer le cas où la page est tout en haut initialement
+        toggleClassOnScroll();
+    </script>
+
+
+
